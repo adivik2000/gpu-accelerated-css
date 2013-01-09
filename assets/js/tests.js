@@ -78,24 +78,23 @@ jQuery(document).ready(function($) {
   // TODO: Click handler for #stopButton
   // $("#stopButton").click(function() {});
 
+  // Random key generator
+  function getRandom(min, max) {
+    if(min > max) return -1;
+    if(min == max) return min;
+    var r;
+    do r = Math.random();
+    while(r == 1.0);
+    return min + parseInt(r * (max - min + 1));
+  }
+
+  // Move the given box
+  function moveBox(box) {
+    var rand = getRandom(0, 5000); // Don't let all boxes start at the same time
+    setTimeout(function() {
+      // Start animation for the current box
+      $(box).toggleClass("move finish");
+    }, rand);
+  }
+
 });
-
-
-// Random key generator
-function getRandom(min, max) {
-  if(min > max) return -1;
-  if(min == max) return min;
-  var r;
-  do r = Math.random();
-  while(r == 1.0);
-  return min + parseInt(r * (max - min + 1));
-}
-
-// Move the given box
-function moveBox(box) {
-  var rand = getRandom(0, 5000); // Don't let all boxes start at the same time
-  setTimeout(function() {
-    // Start animation for the current box
-    $(box).toggleClass("move finish");
-  }, rand);
-}
