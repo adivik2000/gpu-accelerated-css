@@ -1,0 +1,51 @@
+/*
+ * Styles for tests
+ * -------------------------------------------------- */
+
+#stage {
+  position: absolute;
+  width: 480px;
+  height: 360px;
+  border: 1px solid #ccc;
+}
+
+.box {
+  position: absolute;
+  background-color: #069;
+}
+
+.box-small {
+  width: 10px;
+  height: 10px;
+}
+
+.gpu {
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+.ease-linear {
+  -webkit-transition: all 1s ease-in;
+     -moz-transition: all 1s ease-in;
+      -ms-transition: all 1s ease-in;
+       -o-transition: all 1s ease-in;
+          transition: all 1s ease-in;
+}
+
+.move {
+  top: 350px;
+  -webkit-transform: rotateZ(360deg);
+     -moz-transform: rotateZ(360deg);
+      -ms-transform: rotateZ(360deg);
+       -o-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.finish {
+  top: 0;
+}
