@@ -34,7 +34,7 @@ For example, in the test styles used in this project, the mixin is applied like 
 ```
 
 
-## TODO
+## TODO (move to issues)
 
  * More examples
  * Make test js more consistent
@@ -43,6 +43,8 @@ For example, in the test styles used in this project, the mixin is applied like 
  * More explanation for how it works
  * More browser tests, removed superfluous vendor-specific CSS
  * Clean up acks and split out best-practices
+ * Add sliders for animation durations
+ * Incorporate animate.css for more tests
 
 
 ## License
