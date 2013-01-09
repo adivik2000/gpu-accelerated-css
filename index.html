@@ -9,6 +9,82 @@
 
     <!-- styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/css/tests.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
@@ -23,43 +99,42 @@
   <body data-twttr-rendered="true" style="padding: 0;" data-spy="scroll" data-target=".bs-docs-sidebar">
 
 
-    <!-- Subhead
-    ================================================== -->
-    <header class="bs-docs-jumbotron subhead">
-      <div class="container">
-        <h1>GPU-Accelerated CSS Tests</h1>
+    <div class="container-narrow">
+      <div class="masthead">
+        <h3 class="muted">GPU-Accelerated CSS Tests</h3>
       </div>
-    </header>
 
-
-    <div class="container">
 
       <!-- Tests nav
       ================================================== -->
       <div class="row">
-        <div class="span3 bs-docs-sidebar" style="margin-top: 20px;">
-          <ul class="nav nav-list bs-docs-sidenav">
+        <div class="" style="margin-top: 20px;">
+          <div style="margin-top: 30px;">
+            <a class="btn btn-large btn-block" href="https://github.com/jonschlinkert/gpu-accelerated-css/issues?state=open">GitHub Repo &rarr;</a>
+          </div>
+          <!-- <ul class="nav nav-list bs-docs-sidenav">
             <li><a href="#linearTransitions">Linear transitions</a></li>
             <li><a href="#buttonGroups">...</a></li>
-          </ul>
+          </ul> -->
         </div>
-        <div class="span9">
+        <div class="">
 
 
           <!-- Linear Transitions
           ================================================== -->
           <section id="linearTransitions">
             <div class="page-header">
-              <h1>Linear Transitions</h1>
-              <p class="lead">This example shows simple linear transitions using <code>-webkit-transition: all 1s ease-in</code> and <code>-webkit-transform: rotateZ(360deg)</code>.</p>
+              <h3>Linear Transitions</h3>
             </div>
 
             <form action="">
+              <p class="muted">This example shows simple linear transitions using <code>-webkit-transition: all 1s ease-in</code> and <code>-webkit-transform: rotateZ(360deg)</code>. This test was constructed to show how performance suffers and is not consistent across all browsers or under certain conditions. tbc...</p>
+
               <label for="toggle">Enable GPU acceleration</label>
               <input id="toggle" type="checkbox">
               <div class="form-footer">
-                <button class="btn" id="startButton">Start Animation</button>
-                <button class="btn btn-danger disabled" id="stopButton" disabled>Stop</button>
+                <button class="btn btn-success" id="startButton">Start Animation</button>
+                <button class="btn disabled" id="stopButton" disabled>Stop</button>
               </div>
             </form>
 

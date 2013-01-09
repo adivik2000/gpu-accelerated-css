@@ -3,30 +3,39 @@
 // ---------------------------------------------
 
 
-!function ($) {
-  $(function(){
+// !function ($) {
+//   $(function(){
 
-    var $window = $(window)
+//     var $window = $(window)
 
-    /*
-     * AFFIX
-     * ============================== */
+//     /*
+//      * DISABLE CERTAIN LINKS
+//      * ============================== */
 
-    setTimeout(function () {
-      $('.bs-docs-sidenav').affix({
-        offset: {
-          top: function () { return $window.width() <= 980 ? 290 : 210 }
-        , bottom: 270
-        }
-      })
-    }, 100)
+//     $('section [href^=#]').click(function (e) {
+//       e.preventDefault()
+//     })
 
-    // make code pretty
-    window.prettyPrint && prettyPrint()
 
-  })
+//     /*
+//      * AFFIX
+//      * ============================== */
 
-}(window.jQuery)
+//     setTimeout(function () {
+//       $('.bs-docs-sidenav').affix({
+//         offset: {
+//           top: function () { return $window.width() <= 980 ? 290 : 210 }
+//         , bottom: 270
+//         }
+//       })
+//     }, 100)
+
+//     // make code pretty
+//     window.prettyPrint && prettyPrint()
+
+//   })
+
+// }(window.jQuery)
 
 
 // Initialize animated boxes
