@@ -41,6 +41,7 @@ For example, in the test styles used in this project, the mixin is applied like 
  * Add link to license
  * More explanation for how it works
  * More browser tests, removed superfluous vendor-specific CSS
+ * Clean up acks and split out best-practices
 
 
 ## License

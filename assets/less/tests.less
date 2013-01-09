@@ -2,16 +2,19 @@
  * Styles for tests
  * -------------------------------------------------- */
 
-@import "../../../less/mixins.less";
+// Import .accelerate() mixin
+@import "mixins.less";
 
+
+// Make a home for the animated boxes
 #stage {
   position: absolute;
-  width: 480px;
-  height: 360px;
+  width: 720px;
+  height: 510px;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
-
 
 // Animated elements
 .box {
@@ -19,25 +22,25 @@
   background-color: #069;
 }
 .box-small {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }
+
 
 // Apply GPU acceleration using mixin
 .gpu {
   .accelerate();
 }
 
-//
 .ease-linear {
-  -webkit-transition: all 1s ease-in;
-     -moz-transition: all 1s ease-in;
-      -ms-transition: all 1s ease-in;
-       -o-transition: all 1s ease-in;
-          transition: all 1s ease-in;
+  -webkit-transition: all 2s ease-in;
+     -moz-transition: all 2s ease-in;
+      -ms-transition: all 2s ease-in;
+       -o-transition: all 2s ease-in;
+          transition: all 2s ease-in;
 }
 .move {
-  top: 350px;
+  top: 500px;
   -webkit-transform: rotateZ(360deg);
      -moz-transform: rotateZ(360deg);
       -ms-transform: rotateZ(360deg);
@@ -45,9 +48,7 @@
           transform: rotateZ(360deg);
 }
 
-
 // Set boundaries for the animations
 .finish {
   top: 0;
 }
-

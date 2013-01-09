@@ -7,7 +7,7 @@
 // Inspired by @valmar http://stackoverflow.com/questions/10014461/why-does-enabling-hardware-acceleration-in-css3-slow-down-performance
 function init() {
   var max = 1000;
-  var w = 480;
+  var w = 715;
   for(var i = 0; i < max; i++) {
     var left = i;
     if(left > w - 10) {
