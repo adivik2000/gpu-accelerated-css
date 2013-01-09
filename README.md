@@ -37,6 +37,7 @@ For example, in the test styles used in this project, the mixin is applied like 
 ## TODO
 
  * More examples
+ * Make test js more consistent
  * Remove unecessary Bootstrap junk
  * Add link to license
  * More explanation for how it works
